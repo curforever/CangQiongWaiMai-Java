@@ -1,1 +1,2 @@
-记得修改dev.yml的access-key，因为git的安全检查导致有的话就无法push。
+记得补充dev.yml的access-key，因为git的安全检查导致有的话就无法push。
+记得打开redis-server，并以windows config打开，因为config里设置了密码。
