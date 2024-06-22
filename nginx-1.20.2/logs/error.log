@@ -38,3 +38,5 @@
 2024/06/18 18:49:29 [error] 18144#27480: *237 no live upstreams while connecting to upstream, client: 127.0.0.1, server: localhost, request: "POST /api/employee/login HTTP/1.1", upstream: "http://localhost/admin/employee/login", host: "localhost", referrer: "http://localhost/"
 2024/06/18 18:49:30 [error] 18144#27480: *237 no live upstreams while connecting to upstream, client: 127.0.0.1, server: localhost, request: "POST /api/employee/login HTTP/1.1", upstream: "http://localhost/admin/employee/login", host: "localhost", referrer: "http://localhost/"
 2024/06/18 18:49:31 [error] 18144#27480: *237 no live upstreams while connecting to upstream, client: 127.0.0.1, server: localhost, request: "POST /api/employee/login HTTP/1.1", upstream: "http://localhost/admin/employee/login", host: "localhost", referrer: "http://localhost/"
+2024/06/20 18:54:02 [alert] 21108#28312: worker process 8324 exited with code C0000142
+2024/06/20 18:54:02 [alert] 21108#28312: could not respawn worker
