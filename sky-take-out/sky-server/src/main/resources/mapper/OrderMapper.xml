@@ -83,6 +83,7 @@
             </if>
         </where>
     </select>
+
     <select id="countByMap" resultType="java.lang.Integer">
         select count(id) from orders
         <where>
@@ -97,6 +98,7 @@
             </if>
         </where>
     </select>
+
     <select id="getSalesTop10" resultType="com.sky.dto.GoodsSalesDTO">
         select od.name, sum(od.number) number
         from order_detail od,orders o
