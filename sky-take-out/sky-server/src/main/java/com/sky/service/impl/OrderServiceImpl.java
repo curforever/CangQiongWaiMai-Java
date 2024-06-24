@@ -230,9 +230,11 @@ public class OrderServiceImpl implements OrderService {
         jsonObject.put("code", "ORDERPAID"); //本来没有3
         OrderPaymentVO vo = jsonObject.toJavaObject(OrderPaymentVO.class);
         vo.setPackageStr(jsonObject.getString("package"));
+
         //为替代微信支付成功后的数据库订单状态更新，多定义一个方法进行修改
         Integer OrderPaidStatus = Orders.PAID; //支付状态，已支付
         Integer OrderStatus = Orders.TO_BE_CONFIRMED; //订单状态，待接单
+
         //发现没有将支付时间 check_out属性赋值，所以在这里更新
         LocalDateTime check_out_time = LocalDateTime.now();
         orderMapper.updateStatus(OrderStatus, OrderPaidStatus, check_out_time, orderid);
